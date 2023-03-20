@@ -1,0 +1,283 @@
+[{
+  "_id": {
+    "$oid": "63074477585e9db5a688e10a"
+  },
+  "name": "Claro",
+  "chef": "Ran Shmueli",
+  "url": "/Images/Restaurants/Claro.png",
+  "stars": 4,
+  "popular": true,
+  "new": true,
+  "open": true,
+  "dishescontainer": [
+    {
+      "$oid": "6307501e585e9db5a688e116"
+    },
+    {
+      "$oid": "630df593422099c8d1b8362a"
+    },
+    {
+      "$oid": "630df628422099c8d1b83638"
+    },
+    {
+      "$oid": "630df6db422099c8d1b8364c"
+    },
+    {
+      "$oid": "6307519a585e9db5a688e128"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661420663657"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661420663657"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6307468c585e9db5a688e10c"
+  },
+  "name": "Kab-Kim",
+  "chef": "Yariv Malili",
+  "url": "/Images/Restaurants/Kab-Kim.png",
+  "stars": 4,
+  "popular": true,
+  "new": true,
+  "open": false,
+  "dishescontainer": [
+    {
+      "$oid": "630df785422099c8d1b8365a"
+    },
+    {
+      "$oid": "630df828422099c8d1b83674"
+    },
+    {
+      "$oid": "6307519a585e9db5a688e128"
+    },
+    {
+      "$oid": "6307519a585e9db5a688e128"
+    },
+    {
+      "$oid": "6307519a585e9db5a688e128"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661421196169"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661421196169"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63074858585e9db5a688e10e"
+  },
+  "name": "Messa",
+  "chef": "Aviv Moshe",
+  "url": "/Images/Restaurants/Messa.png",
+  "stars": 5,
+  "popular": true,
+  "new": false,
+  "open": true,
+  "dishescontainer": [
+    {
+      "$oid": "630df785422099c8d1b8365a"
+    },
+    {
+      "$oid": "630df9e3422099c8d1b8369e"
+    },
+    {
+      "$oid": "630b523eee513c25b32ccb2f"
+    },
+    {
+      "$oid": "630b523eee513c25b32ccb2f"
+    },
+    {
+      "$oid": "6307519a585e9db5a688e128"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661421656260"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661421656260"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630749fb585e9db5a688e110"
+  },
+  "name": "Beit Hasmachot",
+  "chef": "Assaf Granit",
+  "url": "/Images/Restaurants/Beit-Hasmachot.png",
+  "stars": 5,
+  "popular": true,
+  "new": false,
+  "open": true,
+  "dishescontainer": [
+    {
+      "$oid": "630df593422099c8d1b8362a"
+    },
+    {
+      "$oid": "630dfa74422099c8d1b836ac"
+    },
+    {
+      "$oid": "6307519a585e9db5a688e128"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661422075366"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661422075366"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63074b0e585e9db5a688e112"
+  },
+  "name": "Mashya",
+  "chef": "Yossi Shitrit",
+  "url": "/Images/Restaurants/Mashya.png",
+  "stars": 5,
+  "popular": true,
+  "new": false,
+  "open": true,
+  "dishescontainer": [
+    {
+      "$oid": "6307501e585e9db5a688e116"
+    },
+    {
+      "$oid": "630dfa74422099c8d1b836ac"
+    },
+    {
+      "$oid": "630df9e3422099c8d1b8369e"
+    },
+    {
+      "$oid": "630df977422099c8d1b83690"
+    },
+    {
+      "$oid": "630df891422099c8d1b83682"
+    },
+    {
+      "$oid": "630df828422099c8d1b83674"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661422350939"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661422350939"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63074c3a585e9db5a688e114"
+  },
+  "name": "HIBA Restaurant",
+  "chef": "Yossi Shitrit",
+  "url": "/Images/Restaurants/HIBA-Restaurant.png",
+  "stars": 5,
+  "popular": true,
+  "new": false,
+  "open": false,
+  "dishescontainer": [
+    {
+      "$oid": "6307501e585e9db5a688e116"
+    },
+    {
+      "$oid": "630df593422099c8d1b8362a"
+    },
+    {
+      "$oid": "630df628422099c8d1b83638"
+    },
+    {
+      "$oid": "630df6db422099c8d1b8364c"
+    },
+    {
+      "$oid": "630df785422099c8d1b8365a"
+    },
+    {
+      "$oid": "630df828422099c8d1b83674"
+    },
+    {
+      "$oid": "630df891422099c8d1b83682"
+    },
+    {
+      "$oid": "630df977422099c8d1b83690"
+    },
+    {
+      "$oid": "630df9e3422099c8d1b8369e"
+    },
+    {
+      "$oid": "630dfa74422099c8d1b836ac"
+    },
+    {
+      "$oid": "6307519a585e9db5a688e128"
+    },
+    {
+      "$oid": "630b523eee513c25b32ccb2f"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661422650156"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661422650156"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63199df1a14e937ecf61f3d4"
+  },
+  "name": "Saluf & Sons",
+  "chef": "Saluf",
+  "url": "/Images/Restaurants/Saluf&Sons.png",
+  "stars": 4,
+  "popular": true,
+  "new": false,
+  "open": true,
+  "dishescontainer": [],
+  "priceRange": {
+    "min": 0,
+    "max": 1,
+    "_id": {
+      "$oid": "63199df1a14e937ecf61f3d5"
+    }
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662623217248"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662623217248"
+    }
+  },
+  "__v": 0
+}]

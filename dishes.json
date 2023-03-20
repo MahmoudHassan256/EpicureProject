@@ -1,0 +1,253 @@
+[{
+  "_id": {
+    "$oid": "6307501e585e9db5a688e116"
+  },
+  "name": "Pad Ki Mao",
+  "ingredients": "Broad rice noodles, soy sauce, fish sauce, garlic, meat, seafood or tofu, bean sprouts or other vegetables, Chili, holy basil",
+  "url": "Images/Dishes/Pad Ki Mao.png",
+  "price": 88,
+  "type": "Breackfast",
+  "types": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661423646190"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661423646190"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6307519a585e9db5a688e128"
+  },
+  "name": "Red Farm",
+  "ingredients": "Tofu, Spekkoek Peanuts, Spicy Manis, Pear Yakitori",
+  "url": "Images/Dishes/Red-Farm.png",
+  "price": 80,
+  "type": "Lunch",
+  "types": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661424026790"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661424026790"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630b523eee513c25b32ccb2f"
+  },
+  "name": "Ta Ma La Ko",
+  "ingredients": "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
+  "url": "Images/Dishes/Ta Ma La Ko.png",
+  "price": 98,
+  "type": "Dinner",
+  "types": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661686334915"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661686334915"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630df593422099c8d1b8362a"
+  },
+  "name": "Oatmeal",
+  "ingredients": "quick oats, dried cranberries, toasted pecans",
+  "url": "Images/Dishes/Oatmeal.png",
+  "price": 40,
+  "type": "Breackfast",
+  "types": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661859219663"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661859219663"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630df628422099c8d1b83638"
+  },
+  "name": "Roasted Potato",
+  "ingredients": "red onion, sweet potato, yellow potato, poblano pepper, garlic, eggs, Cheddar",
+  "url": "Images/Dishes/Roasted Potato.png",
+  "price": 38,
+  "type": "Breackfast",
+  "types": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661859368147"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661859368147"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630df6db422099c8d1b8364c"
+  },
+  "name": "Sausage&Egg Sandwich",
+  "ingredients": "red onion, Cheddar, eggs, sweet piquante peppers, parsley, sweet Italian sausage",
+  "url": "Images/Dishes/sausage-and-egg-sandwich.png",
+  "price": 35,
+  "type": "Breackfast",
+  "types": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661859547861"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661859547861"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630df785422099c8d1b8365a"
+  },
+  "name": "Pineapple&Cucumber Smoothie",
+  "ingredients": "water, lemon juice, Greek yogurt, spinach, cucumber, banana, pineapple",
+  "url": "Images/Dishes/pineapple-cucumber-smoothie.png",
+  "price": 20,
+  "type": "Breackfast",
+  "types": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661859717450"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661859717450"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630df828422099c8d1b83674"
+  },
+  "name": "French Toast",
+  "ingredients": "eggs ,milk ,cinnamon ,vanilla extract ,challah bread ,butter ,berries ,honey",
+  "url": "Images/Dishes/French Toast.png",
+  "price": 35,
+  "type": "Breackfast",
+  "types": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661859880719"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661859880719"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630df891422099c8d1b83682"
+  },
+  "name": "Omelet",
+  "ingredients": "yellow onion ,eggs ,salt ,butter ,parmesan ,lemon juice ,spinach",
+  "url": "Images/Dishes/Omelet.png",
+  "price": 45,
+  "type": "Breackfast",
+  "types": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661859985433"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661859985433"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630df977422099c8d1b83690"
+  },
+  "name": "Shakshuka",
+  "ingredients": "yellow onion ,garlic ,tomatoes ,eggs ,spinach ,ground cumin",
+  "url": "Images/Dishes/Shakshuka.png",
+  "price": 55,
+  "type": "Breackfast",
+  "types": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661860215362"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661860215362"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630df9e3422099c8d1b8369e"
+  },
+  "name": "Migas",
+  "ingredients": "eggs ,crushed tortilla chips ,pico de gallo ,cheese",
+  "url": "Images/Dishes/Migas.png",
+  "price": 50,
+  "type": "Breackfast",
+  "types": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661860323596"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661860323596"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630dfa74422099c8d1b836ac"
+  },
+  "name": "Sausage&Egg Bake",
+  "ingredients": "eggs ,sausages ,bacon ,mushrooms ,tomatoes ,garlic ,parsley",
+  "url": "Images/Dishes/sausage-and-egg-bake.png",
+  "price": 52,
+  "type": "Breackfast",
+  "types": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661860468644"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661860468644"
+    }
+  },
+  "__v": 0
+}]

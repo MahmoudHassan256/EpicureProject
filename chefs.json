@@ -1,0 +1,205 @@
+[{
+  "_id": {
+    "$oid": "63060eddb0a5cdc772dde722"
+  },
+  "name": "Asaf Granit",
+  "url": "Images/Chefs/Asaf-Granit.png",
+  "award": false,
+  "new": true,
+  "popular": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661341405423"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661341405423"
+    }
+  },
+  "__v": 0,
+  "Restaurantscontainer": [
+    {
+      "$oid": "630749fb585e9db5a688e110"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63060f1ab0a5cdc772dde724"
+  },
+  "name": "Aviv Moshe",
+  "Restaurantscontainer": [
+    {
+      "$oid": "63074858585e9db5a688e10e"
+    }
+  ],
+  "url": "Images/Chefs/Aviv-Moshe.png",
+  "award": false,
+  "new": true,
+  "popular": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661341466147"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661341466147"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6307231e31b33c36d385a689"
+  },
+  "name": "Eyal Shani",
+  "Restaurantscontainer": [],
+  "url": "Images/Chefs/Eyal-Shani.png",
+  "award": false,
+  "new": true,
+  "popular": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661412127012"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661412127012"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6307233831b33c36d385a68b"
+  },
+  "name": "Meir Adoni",
+  "Restaurantscontainer": [],
+  "url": "Images/Chefs/Meir-Adoni.png",
+  "award": false,
+  "new": true,
+  "popular": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661412152828"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661412152828"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6307234331b33c36d385a68d"
+  },
+  "name": "Omer Miller",
+  "Restaurantscontainer": [],
+  "url": "Images/Chefs/Omer-Miller.png",
+  "award": false,
+  "new": true,
+  "popular": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661412163406"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661412163406"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6307235031b33c36d385a68f"
+  },
+  "name": "Shahaf Shabtay",
+  "Restaurantscontainer": [],
+  "url": "Images/Chefs/Shahaf-Shabtay.png",
+  "award": false,
+  "new": true,
+  "popular": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661412176012"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661412176012"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6307236031b33c36d385a691"
+  },
+  "name": "Nitzan Raz",
+  "Restaurantscontainer": [],
+  "url": "Images/Chefs/Nitzan-Raz.png",
+  "award": false,
+  "new": false,
+  "popular": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661412192079"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661412192079"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6307236b31b33c36d385a693"
+  },
+  "name": "Yossi Shitrit",
+  "Restaurantscontainer": [
+    {
+      "$oid": "63074b0e585e9db5a688e112"
+    },
+    {
+      "$oid": "63074c3a585e9db5a688e114"
+    }
+  ],
+  "url": "Images/Chefs/Yossi-Shitrit.png",
+  "award": true,
+  "new": false,
+  "popular": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661412203105"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661412203105"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6307237931b33c36d385a695"
+  },
+  "name": "Yuval Ben Neriah",
+  "Restaurantscontainer": [],
+  "url": "Images/Chefs/Yuval-Ben-Neriah.png",
+  "award": false,
+  "new": false,
+  "popular": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661412217010"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661412217010"
+    }
+  },
+  "__v": 0
+}]
