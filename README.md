@@ -41,6 +41,12 @@
   <li><strong>GitHub:</strong> Version control system and collaboration platform for managing project codebase and workflow.</li>
 </ul>
 
+<h2>Design Link</h2>
+
+<ul>
+  <li><strong>Figma Design:</strong> <a href="https://www.figma.com/file/w7pMTXZ7NLCIPDw4MCWA5X/Epicure-Website?type=design&mode=design&t=YG5BWnbNxeaQ9Dxq-0">https://www.figma.com/file/w7pMTXZ7NLCIPDw4MCWA5X/Epicure-Website?type=design&mode=design&t=YG5BWnbNxeaQ9Dxq-0</a></li>
+</ul>
+
 <p>The Epicure project aims to provide a vibrant and interactive platform for users to explore the culinary scene in Tel Aviv, connect with talented chefs, and discover exceptional dining experiences.</p>
 
 </body>
