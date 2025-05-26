@@ -1,0 +1,62 @@
+# ===============================
+# Global
+# ===============================
+node_modules/
+dist/
+.env
+*.env
+.DS_Store
+.vscode/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===============================
+# Backend (in /backend)
+# ===============================
+/backend/node_modules/
+/backend/dist/
+/backend/.env
+
+# ===============================
+# Frontend (in /frontend)
+# ===============================
+/frontend/node_modules/
+/frontend/build/
+/frontend/.env
+
+# ===============================
+# OS/Editor Files
+# ===============================
+*.swp
+*.swo
+*.swn
+*.bak
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# ===============================
+# Optional: Ignore coverage/test files
+# ===============================
+coverage/
+*.lcov
+
+# ===============================
+# Optional: Ignore logs
+# ===============================
+logs/
+*.log
+
+# ===============================
+# Optional: Ignore package-lock/yarn.lock (if using one)
+# ===============================
+# package-lock.json
+# yarn.lock
