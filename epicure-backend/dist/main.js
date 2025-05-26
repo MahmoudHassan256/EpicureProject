@@ -8,6 +8,8 @@ const index_1 = __importDefault(require("./routes/index"));
 const index_2 = require("./db/index");
 const body_parser_1 = __importDefault(require("body-parser"));
 const cors_1 = __importDefault(require("cors"));
+const dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
 const app = (0, express_1.default)();
 app.use(body_parser_1.default.urlencoded());
 app.use(body_parser_1.default.json());
@@ -17,8 +19,5 @@ app.get("/", function (req, res) {
 });
 app.use(index_1.default);
 (0, index_2.connectDb)().then(async () => {
-    const PORT = process.env.PORT || 3001;
-    app.listen(PORT, () => {
-        console.log(`Our app is running on port ${PORT}`);
-    });
+    app.listen(3001, () => console.log("Listening on http://localhost:3001"));
 });

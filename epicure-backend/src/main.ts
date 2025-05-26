@@ -1,21 +1,47 @@
 import express from "express";
-import routes from './routes/index';
+import routes from "./routes/index";
 import { connectDb } from "./db/index";
-import bodyParser from 'body-parser';
 import cors from "cors";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
-app.use(bodyParser.urlencoded())
-app.use(bodyParser.json())
-app.use(cors());
 
-app.get("/", function (req, res) {
-    res.send("Default");
-    });
-app.use(routes);
+const corsOptions = {
+  origin: ["https://your-frontend-domain.vercel.app", "http://localhost:3000"],
+  credentials: true
+};
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(cors(corsOptions));
 
-connectDb().then(async () => {
-    app.listen(3001, () => console.log("Listening on http://localhost:3001"));
+app.get("/", (req, res) => {
+  res.send("Default");
 });
 
+app.use("", routes);
 
+app.use(
+  (
+    err: any,
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ) => {
+    console.error(err.stack);
+    res.status(500).json({ error: "Something went wrong" });
+  }
+);
+
+const PORT = process.env.PORT || 3001;
+
+connectDb()
+  .then(() => {
+    app.listen(PORT, () =>
+      console.log(`Listening on http://localhost:${PORT}`)
+    );
+  })
+  .catch((error) => {
+    console.error("Failed to connect to DB:", error);
+  });

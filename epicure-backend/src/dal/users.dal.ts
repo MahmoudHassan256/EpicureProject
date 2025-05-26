@@ -1,4 +1,3 @@
-import { response } from "express";
 import Users from "../db/models/users";
 
 export class UsersDal{
