@@ -1,47 +1,26 @@
 import express from "express";
-import routes from "./routes/index";
-import { connectDb } from "./db/index";
+import path from "path";
 import cors from "cors";
 import dotenv from "dotenv";
 
 dotenv.config();
-
 const app = express();
 
-const corsOptions = {
-  origin: ["https://your-frontend-domain.vercel.app", "http://localhost:3000"],
-  credentials: true
-};
-app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 app.use(express.json());
-app.use(cors(corsOptions));
 
-app.get("/", (req, res) => {
-  res.send("Default");
+// Serve React static files
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+// API routes here...
+app.get("/api/hello", (req, res) => {
+  res.send("Hello from backend");
 });
 
-app.use("", routes);
-
-app.use(
-  (
-    err: any,
-    req: express.Request,
-    res: express.Response,
-    next: express.NextFunction
-  ) => {
-    console.error(err.stack);
-    res.status(500).json({ error: "Something went wrong" });
-  }
-);
+// Fallback for React routing
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
+});
 
 const PORT = process.env.PORT || 3001;
-
-connectDb()
-  .then(() => {
-    app.listen(PORT, () =>
-      console.log(`Listening on http://localhost:${PORT}`)
-    );
-  })
-  .catch((error) => {
-    console.error("Failed to connect to DB:", error);
-  });
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
