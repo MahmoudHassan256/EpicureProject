@@ -7,15 +7,18 @@ import routes from "./routes/index";
 dotenv.config();
 const app = express();
 
-
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://epicure-a0gubx0nb-mahmoudhassan256s-projects.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  }),
+);
 app.use(express.json());
 
 app.get("/api", (req, res) => {
   res.send("Hello from backend");
 });
-
-
 
 connectDb();
 app.use(routes);
