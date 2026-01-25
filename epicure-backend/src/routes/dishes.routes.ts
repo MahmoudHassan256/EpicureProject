@@ -6,6 +6,7 @@ const router = Router();
 router.get("/getDishes", DishesController.getDishes);
 router.post("/createDish", DishesController.createDish);
 router.post("/updateDish", DishesController.updateDish);
+router.post("/deleteDish", DishesController.deleteDish);
 
 export default router;
 

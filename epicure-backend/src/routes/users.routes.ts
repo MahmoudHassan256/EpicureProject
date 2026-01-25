@@ -7,5 +7,3 @@ router.post("/getUser", UsersController.getUser);
 router.post("/createUser", UsersController.createUser);
 
 export default router;
-
-

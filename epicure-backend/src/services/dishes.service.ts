@@ -21,4 +21,10 @@ export class DishesService {
         const res=await dal.updateDish(dish);
         return res;
     };
+    public static async deleteDish(dish:any)
+    {
+        const dal=new DishesDal();
+        const res=await dal.deleteDish(dish);
+        return res;
+    }
 };
