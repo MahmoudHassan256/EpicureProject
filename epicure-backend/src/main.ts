@@ -11,9 +11,13 @@ app.use(
   cors({
     origin: "https://epicure-a0gubx0nb-mahmoudhassan256s-projects.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
   }),
 );
+
+app.options("*", cors());
+
 app.use(express.json());
 
 app.get("/api", (req, res) => {
