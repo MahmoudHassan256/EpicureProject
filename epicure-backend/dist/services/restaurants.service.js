@@ -8,19 +8,25 @@ class RestaurantsService {
         const res = await dal.getRestaurants();
         return res;
     }
-    ;
     async createRestaurant(restaurant) {
         const dal = new restaurants_dal_1.RestaurantsDal();
         const res = dal.createRestaurant(restaurant);
         return res;
     }
-    ;
     async updateRestaurant(restaurant) {
         const dal = new restaurants_dal_1.RestaurantsDal();
         const res = await dal.updateRestaurant(restaurant);
         return res;
     }
-    ;
+    async getRestaurant(param) {
+        const dal = new restaurants_dal_1.RestaurantsDal();
+        const res = await dal.getRestaurant(param);
+        return res;
+    }
+    async deleteRestaurant(restaurant) {
+        const dal = new restaurants_dal_1.RestaurantsDal();
+        const res = await dal.deleteRestaurant(restaurant);
+        return res;
+    }
 }
 exports.RestaurantsService = RestaurantsService;
-;

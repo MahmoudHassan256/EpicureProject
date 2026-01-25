@@ -21,6 +21,11 @@ class DishesService {
         return res;
     }
     ;
+    static async deleteDish(dish) {
+        const dal = new dishes_dal_1.DishesDal();
+        const res = await dal.deleteDish(dish);
+        return res;
+    }
 }
 exports.DishesService = DishesService;
 ;

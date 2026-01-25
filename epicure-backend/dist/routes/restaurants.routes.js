@@ -6,4 +6,6 @@ const router = (0, express_1.Router)();
 router.get("/getRestaurants", restaurantsController_1.RestaurantsController.getRestaurants);
 router.post("/createRestaurant", restaurantsController_1.RestaurantsController.createRestaurant);
 router.post("/updateRestaurant", restaurantsController_1.RestaurantsController.updateRestaurant);
+router.post("/getRestaurant", restaurantsController_1.RestaurantsController.getRestaurant);
+router.post("/deleteRestaurant", restaurantsController_1.RestaurantsController.deleteRestaurant);
 exports.default = router;

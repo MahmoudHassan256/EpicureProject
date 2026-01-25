@@ -15,8 +15,12 @@ class RestaurantsDal {
             new: restaurant.new ? restaurant.new : true,
             popular: restaurant.popular ? restaurant.popular : false,
             open: restaurant.open ? restaurant.open : false,
-            dishescontainer: restaurant.dishescontainer ? restaurant.dishescontainer : [],
-            priceRange: restaurant.priceRange ? restaurant.priceRange : { min: 0, max: 1 },
+            dishescontainer: restaurant.dishescontainer
+                ? restaurant.dishescontainer
+                : [],
+            priceRange: restaurant.priceRange
+                ? restaurant.priceRange
+                : { min: 0, max: 1 },
         });
         const response = await restaurants_1.default.create(restaurant);
         return response;
@@ -24,19 +28,41 @@ class RestaurantsDal {
     async updateRestaurant(restaurant) {
         await restaurants_1.default.findOne({
             name: restaurant.name,
-        }).updateOne({ $set: { chef: restaurant.chef, } });
+        }).updateOne({ $set: { chef: restaurant.chef } });
         const updatedRestaurants = await restaurants_1.default.find();
         return updatedRestaurants;
     }
     getRestaurants() {
         return restaurants_1.default.aggregate([
-            { $lookup: {
+            {
+                $lookup: {
                     from: "dishes",
                     localField: "dishescontainer",
                     foreignField: "_id",
-                    as: "dishescontainer"
-                } }
+                    as: "dishescontainer",
+                },
+            },
         ]);
+    }
+    async getRestaurant(param) {
+        const response = await restaurants_1.default.aggregate([
+            { $match: { name: `${param.name}` } },
+            {
+                $lookup: {
+                    from: "dishes",
+                    localField: "dishescontainer",
+                    foreignField: "_id",
+                    as: "dishescontainer",
+                },
+            },
+        ]);
+        return response;
+    }
+    async deleteRestaurant(restaurant) {
+        const data = await restaurants_1.default.deleteOne({
+            name: restaurant.name,
+        });
+        return data;
     }
 }
 exports.RestaurantsDal = RestaurantsDal;

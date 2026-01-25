@@ -8,25 +8,25 @@ class ChefsService {
         const res = await dal.getChefs();
         return res;
     }
-    ;
     static async getChef(param) {
         const dal = new chefs_dal_1.ChefsDal();
         const res = await dal.getChef(param);
         return res;
     }
-    ;
     async createChef(chef) {
         const dal = new chefs_dal_1.ChefsDal();
         const res = dal.createChef(chef);
         return res;
     }
-    ;
     async updateChef(chef) {
         const dal = new chefs_dal_1.ChefsDal();
         const res = await dal.updateChef(chef);
         return res;
     }
-    ;
+    async deleteChef(chef) {
+        const dal = new chefs_dal_1.ChefsDal();
+        const res = await dal.deleteChef(chef);
+        return res;
+    }
 }
 exports.ChefsService = ChefsService;
-;

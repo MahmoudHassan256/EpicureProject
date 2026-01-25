@@ -21,7 +21,14 @@ class DishesDal {
     async updateDish(dishes) {
         await dishes_1.default.findOne({
             name: dishes.name,
-        }).updateOne({ $set: { chef: dishes.chef, } });
+        }).updateOne({ $set: { chef: dishes.chef } });
+        const updatedDishes = await dishes_1.default.find();
+        return updatedDishes;
+    }
+    async deleteDish(dishes) {
+        await dishes_1.default.deleteOne({
+            name: dishes.name,
+        });
         const updatedDishes = await dishes_1.default.find();
         return updatedDishes;
     }

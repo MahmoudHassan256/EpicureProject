@@ -8,21 +8,29 @@ class RestaurantsController {
         const restaurants = await service.getRestaurants();
         return res.send(restaurants);
     }
-    ;
+    static async getRestaurant(req, res) {
+        const params = req.body;
+        const service = new restaurants_service_1.RestaurantsService();
+        const restaurant = await service.getRestaurant(params);
+        return res.send(restaurant);
+    }
+    static async deleteRestaurant(req, res) {
+        const params = req.body;
+        const service = new restaurants_service_1.RestaurantsService();
+        const restaurant = await service.deleteRestaurant(params);
+        return res.send(restaurant);
+    }
     static async createRestaurant(req, res) {
         const params = req.body;
         const service = new restaurants_service_1.RestaurantsService();
         const restaurant = await service.createRestaurant(params);
         return res.send(restaurant);
     }
-    ;
     static async updateRestaurant(req, res) {
         const params = req.body;
         const service = new restaurants_service_1.RestaurantsService();
         const restaurant = await service.updateRestaurant(params);
         return res.send(restaurant);
     }
-    ;
 }
 exports.RestaurantsController = RestaurantsController;
-;

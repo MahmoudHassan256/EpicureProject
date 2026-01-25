@@ -7,21 +7,23 @@ class DishesController {
         const Dishes = await dishes_service_1.DishesService.getDishes();
         return res.send(Dishes);
     }
-    ;
     static async createDish(req, res) {
         const params = req.body;
         const service = new dishes_service_1.DishesService();
         const dish = await dishes_service_1.DishesService.createDish(params);
         return res.send(dish);
     }
-    ;
     static async updateDish(req, res) {
         const params = req.body;
         const service = new dishes_service_1.DishesService();
         const dish = await dishes_service_1.DishesService.updateDish(params);
         return res.send(dish);
     }
-    ;
+    static async deleteDish(req, res) {
+        const params = req.body;
+        const service = new dishes_service_1.DishesService();
+        const result = await dishes_service_1.DishesService.deleteDish(params);
+        return res.send(result);
+    }
 }
 exports.DishesController = DishesController;
-;

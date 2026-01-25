@@ -7,4 +7,5 @@ router.get("/getChefs", chefsController_1.ChefsController.getChefs);
 router.post("/getChef", chefsController_1.ChefsController.getChef);
 router.post("/createChef", chefsController_1.ChefsController.createChef);
 router.post("/updateChef", chefsController_1.ChefsController.updateChef);
+router.post("/deleteChef", chefsController_1.ChefsController.deleteChef);
 exports.default = router;

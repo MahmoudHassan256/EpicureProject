@@ -7,11 +7,11 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const chefsSchema = new mongoose_1.default.Schema({
     name: {
         type: String,
-        required: true
+        required: true,
     },
     url: {
         type: String,
-        required: true
+        required: true,
     },
     award: {
         type: Boolean,
@@ -30,5 +30,5 @@ const chefsSchema = new mongoose_1.default.Schema({
         required: false,
     },
 }, { timestamps: true });
-const Chefs = mongoose_1.default.model('Chefs', chefsSchema);
+const Chefs = mongoose_1.default.model("Chefs", chefsSchema);
 exports.default = Chefs;

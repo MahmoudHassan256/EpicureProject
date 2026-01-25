@@ -13,7 +13,9 @@ class ChefsDal {
             award: chef.award ? chef.award : false,
             new: chef.new ? chef.new : true,
             popular: chef.popular ? chef.popular : false,
-            Restaurantscontainer: chef.Restaurantscontainer ? chef.Restaurantscontainer : [],
+            Restaurantscontainer: chef.Restaurantscontainer
+                ? chef.Restaurantscontainer
+                : [],
         });
         const response = await chefs_1.default.create(chef);
         return response;
@@ -21,30 +23,40 @@ class ChefsDal {
     async updateChef(chef) {
         const data = await chefs_1.default.findOne({
             name: chef.name,
-        }).updateOne({ $set: { age: chef.age, }, });
+        }).updateOne({ $set: { age: chef.age } });
         return data;
     }
     async getChef(param) {
         const response = await chefs_1.default.aggregate([
             { $match: { name: `${param.name}` } },
-            { $lookup: {
+            {
+                $lookup: {
                     from: "restaurants",
                     localField: "Restaurantscontainer",
                     foreignField: "_id",
-                    as: "Restaurantscontainer"
-                } }
+                    as: "Restaurantscontainer",
+                },
+            },
         ]);
         return response;
     }
     getChefs() {
         return chefs_1.default.aggregate([
-            { $lookup: {
+            {
+                $lookup: {
                     from: "restaurants",
                     localField: "Restaurantscontainer",
                     foreignField: "_id",
-                    as: "Restaurantscontainer"
-                } }
+                    as: "Restaurantscontainer",
+                },
+            },
         ]);
+    }
+    async deleteChef(chef) {
+        const data = await chefs_1.default.deleteOne({
+            name: chef.name,
+        });
+        return data;
     }
 }
 exports.ChefsDal = ChefsDal;
