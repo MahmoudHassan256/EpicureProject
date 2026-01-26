@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://epicure-a0gubx0nb-mahmoudhassan256s-projects.vercel.app",
+    origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
