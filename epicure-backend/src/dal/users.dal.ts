@@ -1,29 +1,32 @@
 import Users from "../db/models/users";
+import bcrypt from "bcrypt";
 
-export class UsersDal{
-
-    public async createUser(User: any) {
-      const bcrypt = require('bcrypt');
-      const pass = bcrypt.hashSync(User.password,10)
-      User = new Users({
-          firstname: User.firstname,
-          lastname:User.lastname,
-          email:User.email,
-          phonenumber:User.phonenumber,
-          password:pass,
-        });
-
-        const response=await Users.create(User);
-        return response;
-    }
-    public async getUser(param:any){
-      const bcrypt = require('bcrypt');
-      const checkUser= await Users.findOne({email:param.email}).find();
-      if(checkUser.length===0 || !bcrypt.compareSync(param.password,checkUser[0].password))
-      return {msg:"This email/password doesn't match our records"}
-      else return checkUser;
+export class UsersDal {
+  public async createUser(userData: any) {
+    const existingUser = await Users.findOne({ email: userData.email });
+    if (existingUser) {
+      throw new Error("User with this email already exists");
     }
 
+    const hashedPassword = await bcrypt.hash(userData.password, 10);
+
+    const user = new Users({
+      firstname: userData.firstname,
+      lastname: userData.lastname,
+      email: userData.email,
+      phonenumber: userData.phonenumber,
+      password: hashedPassword,
+    });
+
+    return await user.save();
+  }
+  public async getUser(email: string, password: string) {
+    const user = await Users.findOne({ email });
+    if (!user) return null;
+
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) return null;
+
+    return user;
+  }
 }
-
-

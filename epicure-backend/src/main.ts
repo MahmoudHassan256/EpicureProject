@@ -7,9 +7,12 @@ import routes from "./routes/index";
 dotenv.config();
 const app = express();
 
+app.set("trust proxy", 1);
+
+
 app.use(
   cors({
-    origin: "*",
+    origin: ["http://localhost:3000", "https://epicure-eight.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,

@@ -1,20 +1,15 @@
 import { UsersDal } from "../dal/users.dal";
 
-export class UsersService{
+export class UsersService {
+  public async login(email: string, password: string) {
+    const dal = new UsersDal();
+    const res = await dal.getUser(email, password);
+    return res;
+  }
 
-    public async getUser(User:any) {
-        const dal = new UsersDal();
-        const res = await dal.getUser(User);
-        return res;
-
-    };
-
-    public async createUser(User:any) {
-        const dal = new UsersDal();
-        const res = dal.createUser(User);
-        return res;
-    };
-};
-
-
-
+  public async signup(userData: any) {
+    const dal = new UsersDal();
+    const res = dal.createUser(userData);
+    return res;
+  }
+}
